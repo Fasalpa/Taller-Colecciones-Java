@@ -3,11 +3,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ArrayListT {
-    static void main(String[] args) {
 
+    public void ejecutar() {
         String separador = "************************";
         Scanner teclado = new Scanner(System.in);
         List<String> toDo = new ArrayList<>();
+
         toDo.add("Mercar");
         toDo.add("Limpiar Casa");
         toDo.add("Regar Plantas");
@@ -15,7 +16,6 @@ public class ArrayListT {
 
         System.out.println(separador);
         System.out.println("Digíte:");
-
 
         for (int i = 0; i < toDo.size(); i++) {
             System.out.println((i + 1) + ") " + toDo.get(i));
@@ -52,6 +52,5 @@ public class ArrayListT {
 
         System.out.println("Tareas restantes: " + toDo.size());
         System.out.println("toDo actual: " + toDo);
-
     }
 }
